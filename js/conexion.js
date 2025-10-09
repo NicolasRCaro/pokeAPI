@@ -1,4 +1,4 @@
-var totalPokes=1024;
+var totalPokes=10081;
 var pokemones=[];
 
 async function Conexion(filtrotipo){
@@ -27,7 +27,6 @@ async function General() {
   Home();
 }
 
-General();
 async function FiltroConexion(Elfiltro){
   document.getElementById("la-lista").innerHTML = "";
   pokemones = await Conexion(Elfiltro);
