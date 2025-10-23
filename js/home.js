@@ -34,6 +34,7 @@ function buscadorfuncion(sza){
 
 function Home(){
 
+    document.getElementById("uno").classList.remove(colorFondo)
     var root=document.getElementById("root");
     root.innerHTML="";
     //buscador

@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 /* Fondo por defecto */
+
 body { 
   margin:0; 
   min-height:100vh; 
   background: linear-gradient(135deg,#f5f7fa,#c3ccd9); 
+}
+*{
+  margin:0;
+
+  font-family: "Roboto", sans-serif;
 }
 
 /* Typing backgrounds */
@@ -24,3 +31,65 @@ body.ice     { background: linear-gradient(135deg,#DFF6FF,#9EE9FF); }
 body.dragon  { background: linear-gradient(135deg,#8A63FF,#2B2EAC); color:#fff; }
 body.dark    { background: linear-gradient(135deg,#1F1B24,#3B2F3F); color:#eee; }
 body.fairy   { background: linear-gradient(135deg,#FFD9F3,#FFB8E6); }
+
+.detalle-header{
+  display:flex;
+  justify-content: space-around;
+}
+
+.detalle-header img{
+  height: 60px;
+}
+
+.informacion{
+  display: none;
+}
+
+.informacion.mostrar{
+  display: block;
+}
+
+.nombre{
+  text-align: center;
+  margin-top: 40px;
+}
+.nombre h3{
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+}
+.nombre p{
+  font-size: 20px;
+  text-align: right;
+  max-width: 200px;
+  margin: 0 auto;
+  font-weight: 700;
+}
+img.img-poke{
+  margin: 0 auto;
+  display: block;
+  width: 70%;
+  height: auto;
+}
+
+.detalle-informacion{
+  text-align: center;
+}
+.detalle-informacion button{
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: solid 0 transparent;
+}
+.detalle-informacion button.about{
+background: #2c2c2c;
+color: #ffff;
+}
+.detalle-informacion button.favorito{
+background: #eed700;
+color: #ffff;
+}
+.detalle-informacion button.evolution{
+background: #dcdcdc;
+color: #2c2c2c;
+}
